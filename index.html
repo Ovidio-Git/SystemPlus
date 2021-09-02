@@ -41,6 +41,37 @@ footer {
 .cab {
     background-color: #f8f8f9;
 }
+	
+  .slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  } 
 </style>
 
 <!DOCTYPE html>
@@ -85,7 +116,7 @@ footer {
             <div class="container-fluid">
              <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col">
-                <div class="card">
+                <div class="card slideInUp">
                   <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/quellcode-t.jpg" class="card-img-top" alt="Imagen de microcontrolador">
                   <div class="card-body shadow">
                     <h5 class="card-title">Lenguajes de programación</h5>
@@ -94,7 +125,7 @@ footer {
                 </div>
               </div>
               <div class="col">
-                <div class="card">
+                <div class="card slideInUp">
                   <img src="https://static2.abc.es/media/tecnologia/2020/09/10/1424817661-kA4D--1200x630@abc.JPG" class="card-img-top" alt="jovenes estudiosos">
                   <div class="card-body shadow">
                     <h5 class="card-title">Alta adaptabilidad</h5>
@@ -103,7 +134,7 @@ footer {
                 </div>
               </div>
               <div class="col">
-                <div class="card">
+                <div class="card slideInUp">
                   <img src="https://www.segurilatam.com/wp-content/uploads/sites/5/2021/06/escudo-cibernetico-1200x630.jpg" class="card-img-top" alt="seguridad">
                   <div class="card-body shadow">
                     <h5 class="card-title">Seguridad</h5>
@@ -112,7 +143,7 @@ footer {
                 </div>
               </div>
               <div class="col">
-                <div class="card">
+                <div class="card slideInUp">
                   <img src="https://static4.abc.es/media/tecnologia/2021/08/10/what-movil-kdoG--1200x630@abc.jpg" class="card-img-top" alt="aplicaciones">
                   <div class="card-body shadow">
                     <h5 class="card-title">Aplicaciones Mobiles</h5>
