@@ -1,14 +1,16 @@
-
 <style>
+	
 h1 {
   font-size: 30px;
   line-height: 1.8;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
+	
 h5 {
   font-family: "Montserrat", sans-serif;
 }
+	
 .hero {
   position: relative;
   -webkit-background-size: cover;
@@ -23,55 +25,78 @@ h5 {
 
 .hero h1 span {
   font-size: 45px; 
-  border-bottom: 2px solid #111111;
+  border-bottom: 2px solid;
   padding-bottom: 12px;
   line-height: 3;
 }
+	
+/* footer */
 footer {
   text-align: center;
   padding: 3px;
   color: silver;
 }
-/* card animation */
+	
+/* card HOVER animation */
 .card:hover{
     transition: 0.3s;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
  }
-  /* background color dashboard */
+	
+/* background color dashboard */
 .cab {
     background-color: #f8f8f9;
 }
-	
-  .slideInUp {
+
+/* card UP animation */
+.slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes slideInUp {
+}
+@-webkit-keyframes slideInUp {
   0% {
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  visibility: visible;
-  }
+    -webkit-transform: translateY(100%);
+     transform: translateY(100%);
+     visibility: visible;
+     }
   100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  }
-  }
-  @keyframes slideInUp {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     }
+}
+@keyframes slideInUp {
   0% {
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  visibility: visible;
-  }
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
   100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  }
-  } 
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+}
+	
+/*  navbar transparent */	
+.header .navbar {
+  background-color: transparent !important;
+}
+
+/* background image */
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 </style>
 
 <!DOCTYPE html>
@@ -88,9 +113,16 @@ footer {
         <title>Plus system</title>
     </head>
   
+    <!--     GENERAL BODY    --->		
     <body>
-        <header>
-
+	    
+        <!--     HEADER    --->		    
+        <header class="header">
+            <div class="bg-img" style="background-image: url('https://images.pexels.com/photos/1287083/pexels-photo-1287083.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1287083.jpg&fm=jpg');">
+		<div class="overlay"></div>
+	    </div>
+		
+	    <!--     NAVBAR    --->		
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark "> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,19 +130,23 @@ footer {
               <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link font-navr up" href="https://mqtt.org/" target="_blank">Mqtt</a>
+                            <a class="nav-link font-navr up text-white" href="https://mqtt.org/" target="_blank">Mqtt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-navr up" href="https://github.com/Ovidio-Git/System-Plus" target="_blank">GitHub</a>
+                            <a class="nav-link font-navr up  text-white" href="https://github.com/Ovidio-Git/System-Plus" target="_blank">GitHub</a>
                         </li>
                     </ul>
               </div>
             </nav>
+	    <!--END  NAVBAR END--->		
+		
 	    <div class="hero slideInUp">
-    			<h1><span>Plus System</span></h1>
+    		<h1><span class="text-white">Plus System</span></h1>
 	    </div>
 	</header>
-      
+        <!--END  HEADER  END--->	 
+	    
+        <!--     BODY CARDS    --->		    
         <body class="cab">
             <br>
             <div class="container-fluid">
@@ -152,14 +188,20 @@ footer {
                 </div>
               </div>
             </div>
-            </div>         
-         </body>
-        <br>
-        <br>
-</body>
-
-<footer>
-   <p>© 2021 Copyright: Sistemas Embebidos </p>
-</footer>
-
+           </div>         
+        </body>
+	<!--END  BODY CARDS END--->  
+        <br> <br>
+	    
+    </body>
+    <!--END  GENERAL BODY END--->
+	
+	
+    <!--     FOOTER    --->	
+    <footer>
+       <p>© 2021 Copyright: Sistemas Embebidos </p>
+    </footer>
+    <!--END  FOOTER  END--->
+	
+	
 </html>
