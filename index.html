@@ -17,14 +17,14 @@ h5 {
   -moz-background-size: cover;
   background-size: cover;
   text-align: center;
-  padding-top: 110px;
+  padding-top: 10vw;
   min-height: 400px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
 
 .hero h1 span {
-  font-size: 45px; 
+  font-size: clamp(3.6rem, 4vw, 60px); 
   border-bottom: 2px solid;
   padding-bottom: 12px;
   line-height: 3;
@@ -83,6 +83,9 @@ footer {
 /*  navbar transparent */	
 .header .navbar {
   background-color: transparent !important;
+}
+.header{
+  height: 100vh;
 }
 
 /* background image */
